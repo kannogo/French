@@ -382,7 +382,7 @@ header .mainflexli {
         height: 250px;
     }
     .slideshow-slides .slide img {
-        width: 620px;
+        width: 550px;
         height: auto;
         left: 70%;
     }
@@ -393,7 +393,7 @@ header .mainflexli {
         display: none;
     }
     .slideshow-indicator {
-        top: 14rem;
+        top: 12.5rem;
         right: 37rem;
     }
 }
