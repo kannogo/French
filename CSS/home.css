@@ -4,6 +4,13 @@ body {
     width: 100%;
     font-family: '游明朝';
 }
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 400px;
+    }
+}
+
 header {
     position: relative;
 }
@@ -378,8 +385,10 @@ header .mainflexli {
 
 @media screen and (max-width: 400px) {
     .slideshow {
-        width: 400px;
+        min-width: 960px;
         height: 250px;
+        overflow: hidden;
+        position: relative;
     }
     .slideshow-slides .slide img {
         width: 100%;
@@ -1068,6 +1077,7 @@ menu {
     width: 90%;
     margin: 50px 0;
     margin-left: 100px;
+    overflow: hidden;
 }
 
 .slick-slide {
