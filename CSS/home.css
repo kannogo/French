@@ -360,6 +360,7 @@ header .mainflexli {
 
 @media screen and (max-width: 769px) {
     .slideshow {
+        width: 768px;
         height: 380px;
     }
     .slideshow-slides .slide img {
@@ -377,6 +378,7 @@ header .mainflexli {
 
 @media screen and (max-width: 400px) {
     .slideshow {
+        width: 400px;
         height: 250px;
     }
     .slideshow-slides .slide img {
