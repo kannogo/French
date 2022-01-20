@@ -382,9 +382,9 @@ header .mainflexli {
         height: 250px;
     }
     .slideshow-slides .slide img {
-        width: 550px;
+        width: 100%;
         height: auto;
-        left: 70%;
+        left: 50%;
     }
     .slideshow-nav .prev {
         display: none;
