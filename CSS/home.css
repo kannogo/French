@@ -853,6 +853,9 @@ menu {
     .times li p:nth-child(5) {
         display: none;
     }
+    .times img {
+        margin-left: 0;
+    }
 }
 
 /* ------------------ shef ------------------- */

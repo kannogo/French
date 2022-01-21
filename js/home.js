@@ -14,7 +14,7 @@ $(function () {
             timer;
 
         $slides.each(function (i) {
-            $(this).css({ left: 100 * i + '%' });
+            $(this).css({ left: `${100 * i}%` });
             indicatorHTML += '<a href="#">' + (i + 1) + '</a>';
         });
         $indicator.html(indicatorHTML);
