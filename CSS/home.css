@@ -3,12 +3,7 @@
 body {
     width: 100%;
     font-family: '游明朝';
-}
-
-@media screen and (max-width: 400px) {
-    body {
-        width: 400px;
-    }
+    -webkit-text-size-adjust: 100%;
 }
 
 header {
@@ -132,7 +127,7 @@ header .mainflexli {
     color: white;
     position: absolute;
     width: 100%;
-    min-width: 960px;
+    /* min-width: 960px; */
     opacity: 0.8;
     z-index: 20;
     -webkit-box-shadow: 0 1px 1px black;
@@ -206,6 +201,15 @@ header .mainflexli {
 }
 
 @media screen and (max-width: 769px) {
+    .page-header {
+        width: 100%;
+    }
+    .primary-nav {
+        width: 100%;
+    }
+    .page-header ul {
+        width: 100%;
+    }
     .primary-nav ul {
         padding: 0;
     }
@@ -246,164 +250,37 @@ header .mainflexli {
     }
 }
 
-/*
- * Slideshow
- */
-
+/* ------------ slideshow ---------------- */
 .slideshow {
-    background-color: rgb(0, 0, 0);
-    height: 650px;
-    min-width: 960px;
-    overflow: hidden;
-    position: relative;
+    margin: 0;
+    padding: 0;
 }
-
-.slideshow-slides {
-    height: 100%;
-    position: absolute;
+.slideshow .slider {
     width: 100%;
-    /* left は JavaScript で指定 */
+    margin: 0;
 }
-.slideshow-slides .slide {
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
+.slideshow .slick-slide img {
     width: 100%;
-    /* left は JavaScript で指定 */
-}
-.slideshow-slides .slide img {
-    width: 1600px;
     height: 650px;
-    left: 50%;
-    margin-left: -800px;
-    position: absolute;
+}
+.slideshow .slick-prev:before,
+.slideshow .slick-next:before {
+    color: black;
 }
 
-.slideshow-nav a,
-.slideshow-indicator a {
-    background-color: rgba(0, 0, 0, 0); /* for IE9 */
-    overflow: hidden;
+.slideshow .slick-slide {
+    transition: all ease-in-out .3s;
 }
-.slideshow-nav a:before,
-.slideshow-indicator a:before {
-    content: url(../images/sprites.png);
-    display: inline-block;
-    font-size: 0;
-    line-height: 0;
+.slideshow .slick-active {
+    opacity: 12;
 }
-
-.slideshow-nav a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 72px;
-    height: 72px;
-    margin-top: -36px;
-}
-.slideshow-nav a.prev {
-    margin-left: -480px;
-}
-.slideshow-nav a.prev:before {
-    margin-top: -20px;    
-}
-.slideshow-nav a.next {
-    margin-left: 408px;
-}
-.slideshow-nav a.next:before {
-    margin-left: -80px;
-    margin-top: -20px;
-}
-.slideshow-nav a.disabled {
-    display: none;
-}
-
-.slideshow-indicator {
-    bottom: 10px;
-    height: 16px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    z-index: 20;
-}
-.slideshow-indicator a {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-left: 3px;
-    margin-right: 3px;
-}
-.slideshow-indicator a.active {
-    cursor: default;
-}
-.slideshow-indicator a:before {
-    margin-left: -110px;
-}
-.slideshow-indicator a.active:before {
-    margin-left: -130px;
-}
-
-/* JavsScript 無効時 */
-.no-js .slideshow {
-    height: auto;
-}
-.no-js .slideshow-slides {
-    height: auto;
-    position: static;
-}
-.no-js .slideshow-slides .slide {
-    display: block;
-    height: auto;
-    position: static;
-}
-.no-js .slideshow-slides .slide img {
-    margin: auto;
-    position: static;
-}
-.no-js .slideshow-nav,
-.no-js .slideshow-indicator {
-    display: none;
+.slideshow .slick-current {
+    opacity: 1;
 }
 
 @media screen and (max-width: 769px) {
-    .slideshow {
-        width: 768px;
-        height: 380px;
-    }
-    .slideshow-slides .slide img {
-        width: 100%;
-        height: auto;
-        left: 70%;
-    }
-    .slideshow-indicator {
-        right: 10rem;
-    }
-    .slideshow-nav a.next {
-        margin-left: 208px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .slideshow {
-        min-width: 960px;
-        height: 250px;
-        overflow: hidden;
-        position: relative;
-    }
-    .slideshow-slides .slide img {
-        width: 100%;
-        height: auto;
-        left: 50%;
-    }
-    .slideshow-nav .prev {
-        display: none;
-    }
-    .slideshow-nav .next {
-        display: none;
-    }
-    .slideshow-indicator {
-        top: 12.5rem;
-        right: 37rem;
+    .slideshow .slick-slide img {
+        height: 42vh;
     }
 }
 
@@ -498,7 +375,7 @@ header .mainflexli {
     .imginfo {
         width: 100%;
         height: 200px;
-        top: 28.5rem;
+        top: 31.5rem;
         background-color: black;
     }
     .imginfo ul {
@@ -1067,47 +944,46 @@ menu {
 /* --------------- slider ------------------ */
 .recommend {
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
     padding-top: 10px;
     background:linear-gradient(to bottom, rgb(243, 240, 235),white);
 
 }
 .recommend .recoinfo {
     line-height: 0;
-    padding-left: 50px;
 }
-.slider {
+.recommend .slider {
     width: 90%;
     margin: 50px 0;
     margin-left: 100px;
-    overflow: hidden;
 }
 
-.slick-slide {
+.recommend .slick-slide {
     margin: 0px 30px;
     padding: 0;
 }
 
-.slick-slide img {
+.recommend .slick-slide img {
     width: 100%;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.recommend .slick-prev:before,
+.recommend .slick-next:before {
     color: black;
 }
 
 
-.slick-slide {
+.recommend .slick-slide {
     transition: all ease-in-out .3s;
     opacity: 1;
 }
 
-.slick-active {
+.recommend .slick-active {
     opacity: 1;
 }
 
-.slick-current {
+.recommend .slick-current {
     opacity: 1;
 }
 .center img:hover {
@@ -1145,18 +1021,20 @@ menu {
 }
 
 @media screen and (max-width: 769px) {
-    .slider {
+    .recommend .slider {
         margin-left: 0;
-        width: 150%;
+        width: 100%;
+        overflow: hidden;
     }
     .centerslideinfo2 {
-        left: 1rem;
+        left: 0;
     }
     #centerslideinfo2 {
-        left: 7rem;
+        bottom: 1rem;
+        left: 3rem;
     }
     #centerslideinfo3 {
-        left: 3rem;
+        left: 0rem;
     }
     .centerslideinfo2 p:nth-child(1) {
         font-size: 16px;

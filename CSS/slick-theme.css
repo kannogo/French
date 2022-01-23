@@ -116,8 +116,8 @@
     .slick-prev {
         left: 0.5rem;
     }
-    .slick-next {
-        right: 24.5rem;
+    .recommend .slick-next {
+        right: 0;
     }
 }
 
@@ -136,13 +136,14 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: 0px;
 
     display: block;
 
     width: 100%;
     padding: 0;
     margin: 0;
+    margin-bottom: -30px;
 
     list-style: none;
 
@@ -213,14 +214,23 @@
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
+    opacity: 1;
     color: black;
 }
 
 @media screen and (max-width: 769px) {
     .slick-dots {
-        bottom: -30px;
+        bottom: 45px;
         width: 768px;
+        z-index: 30;
+    }
+    .recommend .slick-dots li button {
+        bottom: -2rem;
+        line-height: 20px;
+        z-index: 30;
+    }
+    .recommend .slick-dots li {
+        bottom: -0.5rem;
     }
 }
 

@@ -115,3 +115,13 @@
 .no-js .slideshow-indicator {
     display: none;
 }
+
+@media screen and (max-width: 400px) {
+    .slideshow {
+    }
+    .slideshow-slides .slide img {
+        left: 50%;
+        margin-left: -800px;
+        position: absolute;
+    }
+}
