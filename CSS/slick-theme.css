@@ -222,15 +222,14 @@
     .slick-dots {
         bottom: 45px;
         width: 768px;
-        z-index: 30;
     }
     .recommend .slick-dots li button {
         bottom: -2rem;
         line-height: 20px;
-        z-index: 30;
     }
     .recommend .slick-dots li {
-        bottom: -0.5rem;
+        bottom: -3rem;
+        z-index: 10;
     }
 }
 

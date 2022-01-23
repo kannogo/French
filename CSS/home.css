@@ -1021,20 +1021,23 @@ menu {
 }
 
 @media screen and (max-width: 769px) {
+    .recommend {
+        margin-bottom: 0;
+    }
     .recommend .slider {
         margin-left: 0;
         width: 100%;
         overflow: hidden;
     }
     .centerslideinfo2 {
-        left: 0;
+        left: 1rem;
     }
     #centerslideinfo2 {
         bottom: 1rem;
-        left: 3rem;
+        left: 8rem;
     }
     #centerslideinfo3 {
-        left: 0rem;
+        left: 3rem;
     }
     .centerslideinfo2 p:nth-child(1) {
         font-size: 16px;
