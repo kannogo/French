@@ -121,7 +121,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .slick-next {
         right: 45.2rem;
     }
@@ -233,8 +233,9 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .slick-dots {
-        width: 400px;
+        width: 360px;
+        display: none;
     }
 }

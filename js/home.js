@@ -29,8 +29,8 @@ $(function () {
             }
         });
         $window.trigger('scroll');
-    })
-})
+    });
+});
 
 $(document).on('ready', function() {
     $(".center").slick({
@@ -47,6 +47,14 @@ $(document).on('ready', function() {
                 breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 361,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             }

@@ -90,7 +90,7 @@ header .mainflexli {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .mainname {
         height: 50px;
     }
@@ -222,7 +222,7 @@ header .mainflexli {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .page-header.sticky {
         position: relative;
     }
@@ -237,6 +237,9 @@ header .mainflexli {
         top: -3.1rem;
         left: 18.5rem;
     }
+    .primary-nav .imglist2 {
+        padding-right: 0;
+    }
     .primary-nav .logmenu {
         position: absolute;
         top: -3rem;
@@ -244,7 +247,7 @@ header .mainflexli {
     }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 361px) {
     .primary-nav .logmenu {
         display: none;
     }
@@ -281,6 +284,12 @@ header .mainflexli {
 @media screen and (max-width: 769px) {
     .slideshow .slick-slide img {
         height: 42vh;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .slideshow .slick-slide img {
+        height: 30vh;
     }
 }
 
@@ -409,14 +418,14 @@ header .mainflexli {
         padding: 5px 10px;
         font-size: 20px;
         position: absolute;
-        bottom: 0;
+        bottom: -0.5rem;
         left:15rem;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .imginfo {
-        top: 18.5rem;
+        top: 17rem;
     }
     .imginfo li:nth-child(1) {
         display: none;
@@ -446,6 +455,9 @@ header .mainflexli {
         padding: 5px 20px;
         left: 4rem;
         top: 8rem;
+    }
+    .pagetop {
+        right: 0;
     }
 }
 
@@ -512,7 +524,7 @@ header .mainflexli {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .infomenu {
         margin-top: 230px;
     }
@@ -602,7 +614,7 @@ menu {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .couse ul {
         flex-direction: column;
     }
@@ -707,7 +719,7 @@ menu {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .times {
         margin: 80px 20px 20px 20px;
     }
@@ -806,7 +818,7 @@ menu {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .shef {
         margin: 20px 0 20px 30px;
         padding: 0;
@@ -891,6 +903,10 @@ menu {
 }
 
 @media screen and (max-width: 769px) {
+    #infomenu .jp1::before,
+    #infomenu .jp1::after {
+        width: 41.5%;
+    }
     .lanchcouse {
         position: relative;
     }
@@ -902,26 +918,37 @@ menu {
         margin: 0;
         margin-top: 20px;
         padding-right: 0;
-        width: 49%;
+        width: 47%;
     }
     .lanchcouse li:nth-child(2) {
         padding: 0;
-        padding-left: 13px;
+        padding-left: 40px;
     }
     .lanchcouse .premiam {
-        width: 49%;
+        width: 48%;
         position: absolute;
         bottom: 0;
         right: 0;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .lanch {
         margin-top: 50px;
     }
     .lanchcouse {
         margin: 0 30px;
+    }
+    #infomenu .jp1::before,
+    #infomenu .jp1::after {
+        width: 39%;
+    }
+    #infomenu #jp2 {
+        width: 300px;
+        margin-right: 0;
+    }
+    #infomenu #jp3 {
+        width: 90%;
     }
     .lanchcouse ul {
         display: block;
@@ -1044,12 +1071,14 @@ menu {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .recommend {
         margin-bottom: 20px;
     }
-    .slider {
-        width: 300%;
+    .recommend .slider {
+        margin-left: 0;
+        width: 100%;
+        overflow: hidden;
     }
 }
 
@@ -1126,7 +1155,7 @@ menu {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .allmenu li {
         width: 50%;
     }
@@ -1191,21 +1220,21 @@ menu {
 
 @media screen and (max-width: 769px) {
     footer {
-        height: 1500px;
+        height: 1370px;
     }
     .covic {
         right: 2rem;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     footer {
-        height: 1800px;
+        height: 1500px;
     }
     .covic {
         position: relative;;
         margin-left: 70px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
 }
@@ -1250,7 +1279,7 @@ menu {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .footerh2 {
         padding-bottom: 0;
     }
@@ -1294,7 +1323,7 @@ menu {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .about {
         position: relative;
         width: 80%;
@@ -1345,10 +1374,11 @@ menu {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .shop {
-        width: 100%;
-        margin: 0 0 0 30px;
+        width: 90%;
+        margin: 0;
+        padding-left: 30px;
     }
     .shop p {
         font-size: 14px;
@@ -1387,7 +1417,7 @@ menu {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .footerinfo {
         margin: 0 30px;
     }
@@ -1432,7 +1462,7 @@ menu {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 361px) {
     .absolute {
         position: relative;
         width: 90%;
