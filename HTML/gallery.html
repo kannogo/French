@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/gallery.css">
+</head>
+<body>
+<header class="page-header" role="banner">
+    <div class="inner clearfix">
+        <h1 class="gallery-main">MENU</h1>
+        <form class="filter-form" id="gallery-filter">
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-all" value="all" checked>
+                <label for="filter-all">All</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-lunch" value="lunch">
+                <label for="filter-lunch">ランチ</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-dinner" value="dinner">
+                <label for="filter-dinner">ディナー</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-audoble" value="audoble">
+                <label for="filter-audoble">前菜</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-soupe" value="soupe">
+                <label for="filter-soupe">スープ</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-salade" value="salade">
+                <label for="filter-salade">サラダ</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-main" value="main">
+                <label for="filter-main">メイン</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-dessert" value="dessert">
+                <label for="filter-dessert">デザート</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-couse" value="couse">
+                <label for="filter-couse">コース</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-takeout" value="takeout">
+                <label for="filter-takeout">テイクアウト</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-shop" value="shop">
+                <label for="filter-shop">店舗・店内</label>
+            </span>
+        </form>
+    </div>
+</header>
+    
+<div class="page-main" role="main">
+    <ul class="gallery" id="gallery"></ul>
+    <button class="load-more" id="load-more">Load more</button>
+</div>
+<script src="../js/vendor/modernizr.custom.min.js"></script>    
+<script src="../js/vendor/jquery-1.10.2.min.js"></script>    
+<script src="../js/vendor/jquery-ui-1.10.3.custom.min.js"></script>    
+<script src="../js/vendor/jquery.ba-throttle-debounce.min.js"></script>    
+<script src="../js/vendor/imagesloaded.pkgd.min.js"></script>    
+<script src="../js/vendor/masonry.pkgd.min.js"></script>    
+<script src="../js/gallery.js"></script>    
+</body>
+</html>

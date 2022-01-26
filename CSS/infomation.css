@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    width: 1500px;
+    font-family: '游明朝';
+}
+.couse {
+    padding-top: 2vh;
+}
+.couse ul {
+    display: flex;
+}
+.couse li {
+    position: relative;
+    list-style-type: none;
+    margin: 5.2vw 2vw;
+}
+.couse img {
+    width: 50vw;
+}
+.couse img.anchor {
+    display: block;
+    padding-top: 70px;
+}
+.couse h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5vw;
+    
+}
+.couse p {
+    font-size: 20px;
+}
+.couse span {
+    font-size: 30px;
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+}
