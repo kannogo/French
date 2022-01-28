@@ -1227,7 +1227,7 @@ menu {
 
 @media screen and (max-width: 769px) {
     footer {
-        height: 1370px;
+        height: 1000px;
     }
     .covic {
         right: 2rem;
