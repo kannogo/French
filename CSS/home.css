@@ -164,6 +164,15 @@ header .mainflexli {
 .primary-nav li:nth-child(5), .primary-nav li:nth-child(7) {
     border-right: 1px solid white;
 }
+#open_nav {
+    margin: 0 15px;
+    padding-left: 15px;
+    line-height: 15px;
+    border-left: 1px solid white;
+}
+#open_nav:hover {
+    background-color: rgb(139, 133, 133);
+}
 .primary-nav a {
     display: block;
     line-height: 15px;

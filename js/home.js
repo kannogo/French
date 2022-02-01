@@ -66,6 +66,6 @@ document.querySelectorAll('*').forEach(el => el.clientWidth > document.body.clie
 
 $(document).ready(function() {
     $('#open_nav').on('click', function() {
-        $('#wrapper, #nav').toggleClass('show');
+        $('#nav').toggleClass('show');
     });
 });
