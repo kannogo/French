@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="../CSS/slick.css">
     <link rel="stylesheet" href="../CSS/slick-theme.css">
     <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/special.css">
 </head>
 <body>
+    <div id="wrapper">
     <header>
         <ul class="mainflexul">
             <li class="mainflexli">
@@ -35,7 +37,7 @@
         <div class="page-header" role="banner">
             <nav class="primary-nav" role="navigation">
                 <ul>
-                    <li><a href="./">メニュー<br><span>menu</span></a></li>
+                    <li id="open_nav"><a href="">メニュー<br><span>menu</span></a></li>
                     <li><a href="./gallery.html">ギャラリー<br><span>gallery</span></a></li>
                     <li><a href="./">アクセス<br><span>access</span></a></li>
                     <li><a href="./">お客様の声<br><span class="testi">testimonials</span></a></li>
@@ -411,6 +413,29 @@
         </div>
         
     </footer>
+    </div>
+
+    <nav id="nav">
+        <div class="hambergar"><h2>menu</h2></div>
+        <ul>
+            <li id="hamLunch">
+                <a href="#">Lunch-ランチ</a>
+                <li class="hidden">
+                    <a href="">ホテルのランチブッフェ</a>
+                    <a href="">アボガドとスチームチキンのタルタル</a>
+                </li>
+            </li>
+            <li><a href="#">Dinner-ディナー</a></li>
+            <li><a href="#">Audoble-前菜</a></li>
+            <li><a href="#">Supe-スープ</a></li>
+            <li><a href="#">Salade-サラダ</a></li>
+            <li><a href="#">Main-メイン</a></li>
+            <li><a href="#">dessert-デザート</a></li>
+            <li><a href="#">Couse-コース</a></li>
+            <li><a href="#">Takeout-テイクアウト</a></li>
+        </ul>
+    </nav>
+    <script src="../js/vendor/jquery-3.4.1.min.js"></script>
     <script src="../js/vendor/modernizr.custom.min.js"></script>
     <script src="../js/vendor/jquery-1.10.2.min.js"></script>
     <script src="../js/vendor/jquery-ui-1.10.3.custom.min.js"></script>

@@ -64,3 +64,8 @@ $(document).on('ready', function() {
 
 document.querySelectorAll('*').forEach(el => el.clientWidth > document.body.clientWidth ? console.log(el) : null);
 
+$(document).ready(function() {
+    $('#open_nav').on('click', function() {
+        $('#wrapper, #nav').toggleClass('show');
+    });
+});

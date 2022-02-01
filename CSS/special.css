@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* ===== style.cssの上書き ===== */
+.container {
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+}
+
+/* ===== 機能の実装に必要なCSS ===== */
+
+/* ドロワーナビゲーションの必須スタイル */
+#nav {
+    position: fixed;
+    left: -320px;
+    top: 0;
+    width: 270px;
+    height: 100%;
+}
+
+/* ドロワーが開かれたときのスタイル */
+.show {
+    transform: translate3d(320px, 0, 0);
+}
+
+/* ----------- 開く・閉じるアニメーション ------------- */
+#wrapper, #nav {
+    transition: transform 0.3s;
+}
+
+/* ===== 装飾的なCSS ===== */
+
+/* メニュー */
+#nav {
+    padding: 24px 24px 0 24px;
+    background: #000;
+    color: white;
+    z-index: 30;
+}
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#nav li a {
+    display: block;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #114d60;
+    text-decoration: none;
+    color: #fff;
+}
+#nav li a:hover {
+    background: #0e3e4d;
+}
+#nav .hidden {
+    display: none;
+}
+#nav .hiddenShow {
+    display: block;
+}
+
+
+
