@@ -68,4 +68,13 @@ $(document).ready(function() {
     $('#open_nav').on('click', function() {
         $('#nav').toggleClass('show');
     });
+    $('#one').on('click', function() {
+        $('#one1').toggleClass('hiddenshow');
+    });
+    $('#thee').on('click', function() {
+        $('#thee3').toggleClass('hiddenshow');
+    });
+    $('#four').on('click', function() {
+        $('#four4').toggleClass('hiddenshow');
+    });
 });

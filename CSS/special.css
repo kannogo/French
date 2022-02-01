@@ -44,10 +44,10 @@
 #nav li a:hover {
     background: #0e3e4d;
 }
-#nav .hidden {
+.hidden {
     display: none;
 }
-#nav .hiddenShow {
+.hiddenshow {
     display: block;
 }
 
