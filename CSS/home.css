@@ -69,6 +69,13 @@ header .mainflexli {
     line-height: 5px;
     background-color: rgb(65, 62, 62);
 }
+.info .infoli a {
+    text-decoration: none;
+    color: white;
+}
+.info .infoli a p {
+    margin-top: 20px;
+}
 .info li span {
     font-size: 25px;
 }

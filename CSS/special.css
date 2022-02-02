@@ -7,6 +7,8 @@
     top: 0;
     width: 270px;
     height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* ドロワーが開かれたときのスタイル */
@@ -50,6 +52,5 @@
 .hiddenshow {
     display: block;
 }
-
 
 
