@@ -68,28 +68,8 @@ $(document).ready(function() {
     $('#open_nav').on('click', function() {
         $('#nav').toggleClass('show');
     });
-    $('#one').on('click', function() {
-        $('#one1').toggleClass('hiddenshow');
-    });
-    $('#thee').on('click', function() {
-        $('#thee3').toggleClass('hiddenshow');
-    });
-    $('#four').on('click', function() {
-        $('#four4').toggleClass('hiddenshow');
-    });
-    $('#five').on('click', function() {
-        $('#five5').toggleClass('hiddenshow');
-    });
-    $('#six').on('click', function() {
-        $('#six6').toggleClass('hiddenshow');
-    });
-    $('#seven').on('click', function() {
-        $('#seven7').toggleClass('hiddenshow');
-    });
-    $('#eight').on('click', function() {
-        $('#eight8').toggleClass('hiddenshow');
-    });
-    $('#nine').on('click', function() {
-        $('#nine9').toggleClass('hiddenshow');
+    $('.hamLunch').on('click', function() {
+        $(this).find('.hidden').toggleClass('hiddenshow');
+        console.log($(this));
     });
 });
