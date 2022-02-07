@@ -65,10 +65,13 @@ $(document).on('ready', function() {
 document.querySelectorAll('*').forEach(el => el.clientWidth > document.body.clientWidth ? console.log(el) : null);
 
 $(document).ready(function() {
-    $('#open_nav').on('mouseover', function() {
+    $('#open_nav').on('click', function() {
         $('#nav').toggleClass('show');
     });
-    $('#open_nav').on('mouseout', function() {
+    $('.close_nav').on('click', function() {
+        $('#nav').toggleClass('show');
+    });
+    $('.logmenu').on('click', function() {
         $('#nav').toggleClass('show');
     });
     $('.hamLunch').on('click', function() {

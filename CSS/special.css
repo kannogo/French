@@ -53,4 +53,13 @@
     display: block;
 }
 
+#nav .close_nav:hover {
+    color: crimson;
+}
+
+#nav .close_nav {
+    font-size: 14px;
+    margin-left: 100px;
+}
+
 

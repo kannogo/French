@@ -248,6 +248,9 @@ header .mainflexli {
     .primary-nav li:nth-child(7) {
         display: none;
     }
+    #open_nav {
+        display: none;
+    }
     .primary-nav li:nth-child(6) {
         position: absolute;
         top: -3.1rem;
@@ -259,7 +262,7 @@ header .mainflexli {
     .primary-nav .logmenu {
         position: absolute;
         top: -3rem;
-        left: -1rem;
+        left: 0;
     }
 }
 
