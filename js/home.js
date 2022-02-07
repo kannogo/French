@@ -65,7 +65,10 @@ $(document).on('ready', function() {
 document.querySelectorAll('*').forEach(el => el.clientWidth > document.body.clientWidth ? console.log(el) : null);
 
 $(document).ready(function() {
-    $('#open_nav').on('click', function() {
+    $('#open_nav').on('mouseover', function() {
+        $('#nav').toggleClass('show');
+    });
+    $('#open_nav').on('mouseout', function() {
         $('#nav').toggleClass('show');
     });
     $('.hamLunch').on('click', function() {
